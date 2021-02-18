@@ -148,7 +148,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom {
   background-color: white;
-  border-color: transparent;
+  border-color: black;
+  border-style: solid 1px;
 }
 .navbar-custom .navbar-brand {
   color: #222222;
@@ -204,7 +205,8 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
-    border: none;
+    border-color: black;
+    border-style: solid 1px;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
