@@ -276,6 +276,28 @@ header .intro-text .intro-heading {
     font-weight: 700;
   }
 }
+@media (max-width: 768px){
+  header{
+    height: 600px;
+  }
+  header .intro-heading{
+    position: relative;
+    top: 100px;
+  }
+  .btn-xl {
+    color: white;
+    background-color: #a20000;
+    border-color: #a20000;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+    position: relative;
+    top: 100px;
+  }
+}
 section {
   padding: 150px 0;
 }
@@ -746,7 +768,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-body {
-  webkit-tap-highlight-color: ;
 }
