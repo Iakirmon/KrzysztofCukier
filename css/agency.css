@@ -328,7 +328,6 @@ section h3.section-subheading {
   right: 0;
 }
 #portfolio #media .portfolio-item .portfolio-link {
-  display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
@@ -383,7 +382,7 @@ section h3.section-subheading {
 #portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
