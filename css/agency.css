@@ -8,10 +8,10 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: black;
 }
 .text-primary {
-  color: #f63;
+  color: #a20000;
 }
 p {
   font-size: 14px;
@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #f63;
+  color: #a20000;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #f63;
+  color: #a20000;
 }
 h1,
 h2,
@@ -43,8 +43,8 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
+  color:black;
 }
 .img-centered {
   margin: 0 auto;
@@ -57,8 +57,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +69,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +92,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
 }
 .btn-primary .badge {
-  color: #f63;
+  color: #a20000;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -116,8 +116,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #f63;
-  border-color: #f63;
+  background-color:#a20000;
+  border-color: #a20000;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -139,11 +139,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
 }
 .btn-xl .badge {
-  color: #f63;
+  color: #a20000;
   background-color: white;
 }
 .navbar-custom {
@@ -160,26 +160,24 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #a20000;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #f63;
-  border-color: #f63;
+  background-color: #a20000;
+  border-color: #a20000;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   color: white;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #f63;
+  background-color: #a20000;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   color: #222222;
@@ -187,18 +185,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #f63;
+  color: #a20000;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #f63;
+  background-color: #a20000;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #f63;
+  background-color: #a20000;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -232,6 +230,7 @@ header {
   background-image: url('../img/krakow.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -421,7 +420,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #f63;
+  background-color: #a20000;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
