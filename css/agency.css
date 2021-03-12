@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Agency v1.1.1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -734,9 +730,9 @@ ul.social-buttons li a:active {
   background-color: #222222;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  /* IE 9 */
+
   -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
+
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
@@ -745,9 +741,9 @@ ul.social-buttons li a:active {
   background-color: #222222;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  /* IE 9 */
+
   -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
+
   z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
