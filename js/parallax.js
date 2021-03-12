@@ -1,13 +1,8 @@
-/*!
- * parallax.js v1.4.2 (http://pixelcog.github.io/parallax.js/)
- * @copyright 2016 PixelCog, Inc.
- * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
- */
+
 
 ;(function ( $, window, document, undefined ) {
 
-  // Polyfill for requestAnimationFrame
-  // via: https://gist.github.com/paulirish/1579671
+
 
   (function() {
     var lastTime = 0;
@@ -35,7 +30,7 @@
   }());
 
 
-  // Parallax Constructor
+
 
   function Parallax(element, options) {
     var self = this;
@@ -157,7 +152,6 @@
   };
 
 
-  // Parallax Instance Methods
 
   $.extend(Parallax.prototype, {
     speed:    0.2,
@@ -254,7 +248,6 @@
   });
 
 
-  // Parallax Static Methods
 
   $.extend(Parallax, {
     scrollTop:    0,
@@ -353,7 +346,6 @@
   });
 
 
-  // Parallax Plugin Definition
 
   function Plugin(option) {
     return this.each(function () {
@@ -387,15 +379,12 @@
   $.fn.parallax.Constructor = Parallax;
 
 
-  // Parallax No Conflict
 
   $.fn.parallax.noConflict = function () {
     $.fn.parallax = old;
     return this;
   };
 
-
-  // Parallax Data-API
 
   $(document).on('ready.px.parallax.data-api', function () {
     $('[data-parallax="scroll"]').parallax();
