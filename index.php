@@ -120,7 +120,7 @@ include 'sendEmail.php';
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Komornik Sądowy przy Sądzie Rejonowym<br>  dla Krakowa-Śródmieścia w Krakowie  
+                <div class="intro-heading styl">Komornik Sądowy przy Sądzie Rejonowym<br>  dla Krakowa-Śródmieścia w Krakowie  
                     <br>   Krzysztof Cukier <br> Kancelaria Komornicza nr XII w Krakowie
                 </div>
             </div>
