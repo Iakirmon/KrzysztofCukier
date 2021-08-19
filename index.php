@@ -1,3 +1,6 @@
+<?php
+include 'sendEmail.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +14,12 @@
     <!--<meta name="viewport" content="initial-scale=0.1">-->
     <title>Komornik Sądowy Kraków</title>
 
+		
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel = "icon" href = 
-    "img/ms-icon-144x144.png" 
+    "img/orzeł.ico" 
             type = "image/x-icon">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -39,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll zdjecie"  href="#page-top"><img src="img/eagler.svg" alt="" class="svgg">
+                <a class="navbar-brand page-scroll zdjecie"  href="#page-top"><img src="img/godlo_polski.svg.png" alt="" class="svgg">
                     <p class="poczatek"><span class="spann"> Krzysztof Cukier</span>
                     
                     <span class="kom"> Komornik Sądowy</span>
@@ -48,13 +52,9 @@
 
 
             <div class="collapse navbar-collapse praca" id="bs-example-navbar-collapse-1" style="text-align: center;">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right zac" style="position: relative; right: 75px;">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">
- Kancelaria</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">
@@ -89,21 +89,21 @@
                 <div style="font-size:11px">
                 <div class="col-sm-6 " style="width: 23%; padding-right: 0%;">
                 <span class="fa-stack fa-2x" >
-                    <i class="fa fa-phone fa-stack-1x fa-inverse" style="color:#022044"></i>
+                    <i class="fa fa-phone fa-stack-1x fa-inverse" style="color:black"></i>
                 </span>
-                <p class="text-muted" style="display: inline;color:#022044">123 456 789</p>
+                <p class="text-muted" style="display: inline;color:black">12 638 78 75</p>
                 </div>
                 <div class="col-sm-6" style="width: 22%; padding-right: 0%;">
                     <span class="fa-stack fa-2x">
-                        <i class="fa fa-envelope fa-stack-1x fa-inverse" style="color:#022044"></i>     
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse" style="color:black"></i>     
                     </span>
-                <p class="text-muted" style="display: inline;float:right; line-height: 3em;color:#022044">krakow.cukier@komornik.pl</p>
+                <p class="text-muted" style="display: inline;float:right; line-height: 3em;color: black">krakow.cukier@komornik.pl</p>
                 </div>
                 <div class="col-sm-6" style="width: 25%; padding-right: 0%;">
                     <span class="fa-stack fa-2x">
-                        <i class="fa fa-credit-card fa-stack-1x fa-inverse" style="color:#022044"></i>
+                        <i class="fa fa-credit-card fa-stack-1x fa-inverse" style="color:black"></i>
                     </span>
-                <p class="text-muted" style="display: inline; float:right; line-height: 3em; color:#022044">12 3456 7890 1000 0000 2345 6789</p>
+                <p class="text-muted" style="display: inline; float:right;line-height: 2em; color:black; font-size: 13px;">BNP Paribas Bank Polska S.A. <br> 33 1600 1462 1851 3811 7000 0003 </p>
                 </div>
             </div>
                 </div>
@@ -112,11 +112,17 @@
         </div>
 
     </nav>
-
+    
+    
+    
+    
+    
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">KANCELARIA KOMORNICZA <br>  NR I W KRAKOWIE</div>
+                <div class="intro-heading">Komornik Sądowy przy Sądzie Rejonowym<br>  dla Krakowa-Śródmieścia w Krakowie  
+                    <br>   Krzysztof Cukier <br> Kancelaria Komornicza nr XII w Krakowie
+                </div>
             </div>
             <br> <br> <br> <br>
         </div>
@@ -124,39 +130,42 @@
 
     <section id="services" style="height: auto;">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
-                    <h2> Komornik Sądowy przy Sądzie Rejonowym <br>
-                        w Krakowie Krzysztof Cukier <br>
-                        Kancelaria Komornicza nr I w Krakowie</h2>
-                        <hr>
-                </div>
-            </div>
             <div class="row text-center">
-                <div class="col-md-4 shadoww phon">
+
+                    <a class="page-scroll" href="#team" >
+                <div class="col-md-4 shadoww phon highlight">
+                    
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                    </span>
+                    
+                    <h4 class="service-heading">Wnioski</h4>
+                </div>
+            </a>
+
+
+            <a class="page-scroll" href="#about" >
+                <div class="col-md-4 shadoww phon highlight">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Egzekucja świadczeń</h4>
-                    <p class="text-muted just">Komornik Sądowy Krzysztof Cukier prowadzi egzekucję świadczeń niepieniężnych i pieniężnych na obszarze właściwości Sądu Rejonowego w Krakowie.</p>
+                    
+                    <h4 class="service-heading">Licytacje</h4>
                 </div>
-                <div class="col-md-4 shadoww phon">
+            </a>
+
+            <a class="page-scroll" href="#wplaty" >
+                <div class="col-md-4 shadoww phon highlight">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Licytacja nieruchomości</h4>
-                    <p class="text-muted just">Komornik Sądowy Krzysztof Cukier prowadzi na terenie właściwości Sądu Rejonowego w Krakowie egzekucję oraz licytację nieruchomości.</p>
+                    
+                    <h4 class="service-heading">Wpłaty</h4>
                 </div>
-                <div class="col-md-4 shadoww phon">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Egzekucja alimentów </h4>
-                    <p class="text-muted just">Komornik Sądowy Krzysztof Cukier odzyskuje świadczenia alimentacyjne na obszarze właściwości terytorialnej Kancelarii Komorniczej nr I w Krakowie.</p>
-                </div>
+            </a>
             </div>
         </div>
     </section>
@@ -166,12 +175,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="section-heading">Właściowość terytorialna</h3>
-                    <h4 class="section-heading">Obręb Śródmieście i Stare Miasto</h4> <br> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="text-muted just">Wierzyciel zgodnie art. 10 ust. 1 ww. ustawy ma prawo wyboru komornika na obszarze właściwości sądu apelacyjnego, na którym znajduje się siedziba kancelarii komornika właściwego zgodnie przepisami ustawy z dnia 17.11.1964r. - Kodeks postępowania cywilnego, z wyjątkiem spraw egzekucję z nieruchomości, wydanie nieruchomości, wprowadzenie w posiadanie nieruchomości, opróżnienie pomieszczeń, w tym lokali mieszkalnych z osób lub rzeczy oraz spraw, w których przepisy o egzekucji z nieruchomości stosuje się odpowiednio.</p> <br>
+                    <p class="text-muted just">Komornik Sądowy Krzysztof Cukier działa na obszarze właściwości Sądu Rejonowego dla Krakowa-Śródmieścia w Krakowie. Zgodnie z art. 10 ustawy o komornikach sądowych wierzyciel ma prawo wyboru Komornika na obszarze właściwości Sądu Apelacyjnego, którym w tym wypadku jest Sąd Apelacyjny w Krakowie, za wyjątkiem spraw: o egzekucję z nieruchomości, o wydanie nieruchomości, o wprowadzenie w posiadanie nieruchomości, o opróżnienie pomieszczeń, w tym lokali mieszkalnych z osób i rzeczy, spraw w których przepisy o egzekucji z nieruchomości stosuje się odpowiednio. Wybierając Komornika, wierzyciel składa wraz wnioskiem oświadczenie o treści: „Oświadczam, iż wyboru komornika dokonuje na podstawie art. 10 ustawy o komornikach sądowych z dnia 22 marca 2018 roku”.
+                        </p> <br>
                 </div>
                 
             </div>
@@ -188,8 +197,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                <h4 class="section-heading">Aktualnie brak licytacji</h4>
-                <p class="text-muted just">Wygląda na to, że nie możemy znaleźć tego, czego szukasz. Spróbuj skorzystać z wyszukiwania.</p>
+                <p class="text-muted just">Informacje dotyczące licytacji prowadzonych przez tutejszego Komornika znajdują się na stronie: <a href="https://licytacje.komornik.pl/" style="color: blue">www.licytacje.komornik.pl</a> </p>
                 </div>
             </div>
         </div>
@@ -198,50 +206,42 @@
 
     
     <section id="team" style="height: auto;">
-        <aside class="clients" data-parallax="scroll" data-image-src="img/krakow.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="text-center" style="color: white; -webkit-text-stroke: 1px black;">Wnioski</h1>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <div class="container">
-        <div class="row" style="padding-top: 10%;">
+        <div class="container">     
+        <div class="row">
+            <h1 class="text-center" style="color: black;">Wnioski</h1>
         <div class="col-md-12 col-sm-12 portfolio-item phon just">
             <div class="ukryj_phon">
                 <div style="margin-bottom: 10px; background-color: #cccccc; text-align: center;" class="pad">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek alimenty.pdf" download="app/wniosek alimenty.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                     
                 </a>
                 <br>
-                <h5 class="section-heading" style="color:black; display: inline;">Oświadczenie wierzyciela o wyborze komornika</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o egzekucję świadczeń alimentacyjnych</h4>
                 </div>
             </div>
             <div class="ukryj">
             <div style="margin-bottom: 10px; background-color: #cccccc;">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek alimenty.pdf" download="app/wniosek alimenty.pdf" target="_blank" >
                 <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                     <div style="font-size: 8px;">Pobierz dokument</div>
                 </button>
             </a>
             
-            <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" class="lap" >
+            <a href="app/wniosek alimenty.pdf" download="app/wniosek alimenty.pdf" target="_blank" class="lap" >
                 <span class="fa-stack fa-2x">
                 <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
                 
 
                 </span>
-                <a href="img/Raz dwa trzy.odt" target="_blank" class="lap">
+                <a href="app/wniosek alimenty.docx" download="app/wniosek alimenty.docx" target="_blank" class="lap">
                     <span class="fa-stack fa-2x">
                 <i class="fa fa-file-word-o" style="color:#a20000; display: inline;"></i>
             </span>
         
-                <h5 class="section-heading" style="color:black; display: inline;">Oświadczenie wierzyciela o wyborze komornika</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o egzekucję świadczeń alimentacyjnych</h4>
             </a>
             </a>
             </div>
@@ -251,33 +251,33 @@
         <div class="col-md-12 col-sm-12 portfolio-item phon just">
             <div class="ukryj_phon">
                 <div style="margin-bottom: 10px; background-color: #cccccc; text-align: center;" class="pad">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek doręczenie.pdf" download="app/wniosek doręczenie.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                     
                 </a>
                 <br>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o wszczęcie egzekucji</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek doręczenie</h4>
                 </div>
             </div>
             <div class="ukryj">
             <div style="margin-bottom: 10px; background-color: #cccccc;">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek doręczenie.pdf" download="app/wniosek doręczenie.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                 </a>
-            <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" class="lap">
+            <a href="app/wniosek doręczenie.pdf" download="app/wniosek doręczenie.pdf" target="_blank" class="lap">
                 <span class="fa-stack fa-2x">
                 <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
                 
                 </span>
-                <a href="img/Raz dwa trzy.odt" target="_blank" class="lap" >
+                <a href="app/wniosek doręczenie.docx" target="_blank" class="lap" >
                     <span class="fa-stack fa-2x">
                 <i class="fa fa-file-word-o" style="color:#a20000; display: inline;"></i>
             </span>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o wszczęcie egzekucji</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek doręczenie</h4>
             </a>
             </div>
             </div>
@@ -286,33 +286,33 @@
         <div class="col-md-12 col-sm-12 portfolio-item phon just" >
             <div class="ukryj_phon">
                 <div style="margin-bottom: 10px; background-color: #cccccc; text-align: center;" class="pad">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek egzekucyjny zwkły.pdf" download="app/wniosek egzekucyjny zwkły.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                     
                 </a>
                 <br>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o sporządzenie protokołu faktycznego</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek egzekucyjny zwykły</h4>
                 </div>
             </div>
             <div class="ukryj">
             <div style="margin-bottom: 10px;background-color: #cccccc;">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek egzekucyjny zwkły.pdf" download="app/wniosek egzekucyjny zwkły" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                 </a>
-            <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" class="lap">
+            <a href="app/wniosek egzekucyjny zwkły.pdf" download="app/wniosek egzekucyjny zwkły.pdf" target="_blank" class="lap">
                 <span class="fa-stack fa-2x">
                 <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
                 
                 </span>
-                <a href="img/Raz dwa trzy.odt" target="_blank" class="lap" >
+                <a href="app/wniosek egzekucyjny zwkły.docx" target="_blank" class="lap" >
                     <span class="fa-stack fa-2x">
                 <i class="fa fa-file-word-o" style="color:#a20000; display: inline;"></i>
             </span>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o sporządzenie protokołu faktycznego</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek egzekucyjny zwykły</h4>
             </a>
             </div>
             </div>
@@ -321,7 +321,7 @@
         <div class="col-md-12 col-sm-12 portfolio-item phon just">
             <div class="ukryj_phon">
                 <div style="margin-bottom: 10px; background-color: #cccccc; text-align: center;" class="pad">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek ogólny w toku postępowania.pdf" download="app/wniosek ogólny w toku postępowania.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
@@ -333,56 +333,23 @@
             </div>
             <div class="ukryj">
             <div style="margin-bottom: 10px; background-color: #cccccc;">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
+                <a href="app/wniosek ogólny w toku postępowania.pdf" download="app/wniosek ogólny w toku postępowania.pdf" target="_blank" >
                     <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
                         <div style="font-size: 8px;">Pobierz dokument</div>
                     </button>
                 </a>
-            <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" class="lap">
+            <a href="app/wniosek ogólny w toku postępowania.pdf" download="app/wniosek ogólny w toku postępowania.pdf" target="_blank" class="lap">
                 <span class="fa-stack fa-2x">
                 <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
                 
                 </span>
-                <a href="img/Raz dwa trzy.odt" target="_blank" class="lap" >
+                <a href="app/wniosek ogólny w toku postępowania.docx" target="_blank" class="lap" >
                     <span class="fa-stack fa-2x">
                 <i class="fa fa-file-word-o" style="color:#a20000; display: inline;"></i>
             </span>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o sporządzenie spisu inwentarza</h4>
+                <h5 class="section-heading" style="color:black; display: inline;">Wniosek ogólny w toku postępowania</h4>
             </a>
             </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 portfolio-item just phon">
-            <div class="ukryj_phon">
-                <div style="margin-bottom: 10px; background-color: #cccccc; text-align: center;" class="pad">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
-                    <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
-                        <div style="font-size: 8px;">Pobierz dokument</div>
-                    </button>
-                    
-                </a>
-                <br>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o sporządzenie spisu inwetnarza</h4>
-                </div>
-            </div>
-            <div class="ukryj">
-            <div style="margin-bottom: 10px; background-color: #cccccc;">
-                <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" >
-                    <button type="button" class="btn btn-primary" style="display: inline; margin-right: 10%;margin-left: 10%;">
-                        <div style="font-size: 8px;">Pobierz dokument</div>
-                    </button>
-                </a>
-            <a href="img/postepowanie.pdf" download="img/postepowanie.pdf" target="_blank" class="lap">
-                <span class="fa-stack fa-2x">
-                <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
-                
-                </span>
-                <a href="img/Raz dwa trzy.odt" target="_blank" class="lap" >
-                    <span class="fa-stack fa-2x">
-                <i class="fa fa-file-word-o" style="color:#a20000; display: inline;"></i>
-            </span>
-                <h5 class="section-heading" style="color:black; display: inline;">Wniosek o egzekucję świadczeń alimentacyjnych</h4>
-            </a>
             </div>
         </div>
         </div>
@@ -393,10 +360,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="section-heading">Wpłaty</h3>
-                    <p class="text-muted" style="color: black;">Odbiorcą przelewów i wpłat gotówkowych jest:</p>
-                    <p class="text-muted" style="color:black">Komornik Sądowy przy Sądzie Rejonowym
-                        w Krakowie Krzysztof Cukier</p>
-                        <br>
                 </div>
             
                 <div class="col-md-6 col-sm-6 text-center shadoww">
@@ -405,14 +368,14 @@
                         <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
                     </span>
                     
-                   <p class="text-muted just phon"><br> Wpłaty w formie przelewów można składać na konto kancelarii o numerze: <br><strong style="color: black;">12 3456 7890 1000 0000 2345 6789</strong><br> W tytule wykonywanego przelewu należy wpisać imię i nazwisko, sygnaturę sprawy oraz tytuł wpłaty. </p>
+                   <p class="text-muted just phon"><br> Wpłat można dokonywać na rachunek kancelarii:  <br><strong style="color: black;">BNP Paribas Bank Polska S.A. 33 1600 1462 1851 3811 7000 0003 </strong><br> W tytule przelewu należy podać: imię, nazwisko, tytuł wpłaty oraz sygnaturę sprawy. </p>
                 </div>
                 <div class="col-md-6 col-sm-6 text-center shadoww">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-money fa-stack-1x fa-inverse"></i>
                     </span>
-                    <p class="text-muted just phon"><br>Wpłat w formie gotówkowej można dokonywać w kasie kancelarii w godzinach urzędowania. Siedziba kancelarii znajduje się przy ulicy Partyzantów 14/5 w Krakowie</p>
+                    <p class="text-muted just phon"><br>W godzinach otwarcia kancelarii wpłat gotówkowych można dokonać w jej siedzibie.</p>
                 </div>
         </div>
         </div>
@@ -425,17 +388,19 @@
                 <h2 class="section-heading text-center" style="color: black;">Kontakt</h2>
 
                 <div class="col-lg-12 text-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9603540059697!2d19.945689015457326!3d50.06830412270769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1ba87d805f%3A0x5ef9b413cd3918e2!2zS3Jha8OzdyBHxYLDs3dueQ!5e0!3m2!1spl!2spl!4v1613654010053!5m2!1spl!2spl" class="widok"></iframe><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.4597941137736!2d19.9659613155844!3d50.05895017942328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b3a80e7eb75%3A0xd013c0220d43ecbc!2sStefana%20Bobrowskiego%2015%2C%2031-559%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1629220292915!5m2!1spl!2spl" class="widok"></iframe><br>
                 </div>
             </div>
             <div class="row" style="font-size: 14px;">
                 <div class="col-lg-12 text-center">
-                    <h2>
-                        Komornik Sądowy przy Sądzie Rejonowym
-                        <br> dla Krakowa Śródmieścia w Krakowie Krzysztof Cukier
+                    <h3>
+                        Komornik Sądowy przy Sądzie Rejonowym <br>
+                        dla Krakowa-Śródmieścia w Krakowie <br>
+                        Krzysztof Cukier <br>
+                        Kancelaria Komornicza nr XII w Krakowie
 
-                    </h2>
-                    <h3> Kancelaria Komornicza nr I w Krakowie</h3>
+
+                    </h3>
                     <hr>
                 </div>
                 <div class="col-md-4 col-sm-4 portfolio-item text-center shadoww phon">
@@ -443,15 +408,15 @@
                         <i class="fa fa-map-marker" aria-hidden="true" style="color:#a20000"></i>
                         
                 </span>
-                <h4 style="font-weight: bold;"> ul. Krakowska 15/4 <br> 51-672 Kraków</h4>
+                <h4 style="font-weight: bold;"> ul. Bobrowskiego 15/1,  <br> 31-552 Kraków</h4>
                         <p style="color:black">Adres Kancelarii</p>
                 </div>
                 <div class="col-md-4 col-sm-4 portfolio-item text-center shadoww phon">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-mobile" aria-hidden="true" style="color:#a20000"></i>
                 </span>
-                <h4 style="font-weight: bold;">+48 12 345 67 89</h4> <br>
-                <p style="color:black;">Telefon kontaktowy</p>
+                <h4 style="font-weight: bold;">604 870 323 </h4> <br>
+                <p style="color:black;">Komornik</p>
                 </div>
                 <div class="col-md-4 col-sm-4 portfolio-item text-center shadoww phon">
                     <span class="fa-stack fa-5x">
@@ -464,57 +429,58 @@
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-clock-o" aria-hidden="true" style="color:#a20000"></i>
                 </span>
-                <h4 style="font-weight: bold;">08:00-15:30</h4>
+                <h4 style="font-weight: bold;">Poniedziałek - Czwartek <br>09:00-15:00</h4>
                 <p style="color: black">Godziny pracy Kancelarii</p>
                 </div>
                 <div class="col-md-4 col-sm-4 portfolio-item text-center shadoww phon">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-user" aria-hidden="true" style="color:#a20000"></i>
                 </span>
-                <h4 style="font-weight: bold;">1234</h4>
+                <h4 style="font-weight: bold;">3124</h4>
                 <p style="color: black">ID EPU</p>
                 </div>
                 <div class="col-md-4 col-sm-4 portfolio-item text-center shadoww phon">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-phone" aria-hidden="true" style="color:#a20000"></i>
                 </span>
-                <h4 style="font-weight: bold;">08:00-15:30</h4>
-                <p style="color: black">Godziny kontaktu telefonicznego dla wierzycieli i dłużników</p>
+                <h4 style="font-weight: bold;">12 638 78 75</h4>
+                <p style="color: black">Kancelaria</p>
                 </div>
                 <div class="ukryj">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form class="contact" action="" method="post">
                         <div class="row">
                             <br>
                             <div class="col-md-6" >
                                 <div class="form-group" >
-                                    <input type="text" class="form-control" placeholder="Twoje imie i nazwisko" id="name" required data-validation-required-message="Wprowadź imie i nazwisko">
+                                    <input type="text" class="form-control" placeholder="Twoje imie i nazwisko" name="name" required data-validation-required-message="Wprowadź imie i nazwisko">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" style="border-style: solid 1px black;" placeholder="Twój email" id="email" required data-validation-required-message="Wprowadź email">
+                                    <input type="email" class="form-control" style="border-style: solid 1px black;" placeholder="Twój email" name="email" required data-validation-required-message="Wprowadź email">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Twój telefon" id="phone" required data-validation-required-message="Wprowadź numer telefonu">
+                                    <input type="tel" class="form-control" style="border-style: solid 1px black;" placeholder="telefon" name="tel" required data-validation-required-message="Wprowadź swój telefon">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Twoja wiadomość" id="message" required data-validation-required-message="Napisz wiadomość"></textarea>
+                                    <textarea class="form-control" placeholder="Twoja wiadomość" name="subject" required data-validation-required-message="Napisz wiadomość"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Wyślij wiadomość</button>
+                                <input type="submit" name="submit" class="btn btn-xl" value="Wyślij wiadomość" >
                             </div>
+                            <?php echo $alert; ?>
                         </div>
                     </form>
                 </div>
+                
             </div>
+            
             </div>
         </div>
     </section>
@@ -529,7 +495,7 @@
                 </div>
                 <div class="col-md-3 col-sm-3 portfolio-item text-center">
             <div style="margin-bottom: 10px; background-color: #cccccc;">
-                    <a href="https://da0c668d-4f41-49fe-8db2-df7661a262b5.filesusr.com/ugd/d1771c_baa5bb69b7c14c6e96db578cd5b4a640.pdf" target="_blank" style="padding: 9%; border-right:5px solid #a20000;position:relative; bottom:13px">
+                    <a target="_blank" style="padding: 9%; border-right:5px solid #a20000;position:relative; bottom:13px">
                     <span class="fa-stack fa-4x">
                     <i class="fa fa-file-pdf-o" style="color:#a20000; display: inline;"></i>
                     </span>
@@ -544,18 +510,13 @@
             </div>
         </div>
     </section>
-    <!---
     <footer  style="background-color: #A9A9A9; height: auto;">
-        <section >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright Wojciech Wypych</span>
-                </div>
-            </div>
-        </div>
-        </section>
-    </footer>-->
+
+
+                    <span class="copyright">Niniejsza strona ma wyłączenie charakter informacyjny i nie stanowi reklamy kancelarii.<br>
+© 2021 Komornik Sądowy Krzysztof Cukier
+</span>
+    </footer>
     <div class="Razz">
     <a class="Btn-phone" href="tel:+48 695 394 742" style="color:white;">
         <span class="fa-stack fa-2x" style="color: white;">
@@ -581,7 +542,7 @@
         </a>
     </div>
     </div>
---->
+---><!---
     <div class="Cookies1">
         <div class="info1">
             Strona korzysta z plików cookies w celu realizacji usług. Możesz określić warunki przechowywania lub dostępu do plików cookies w Twojej przeglądarce
@@ -591,8 +552,15 @@
           </div>
         </div>
       </div>
+-->
 
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+
+if(window.history.replaceState){
+    window.history.replaceState(null,null,window.location.href);
+}
+                    </script>
 
 
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
