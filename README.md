@@ -18,4 +18,4 @@ php -S localhost:8000 -t <your_folder>
 http://localhost:8000
 ```
 \
-    ![Test Image 2](https://github.com/Iakirmon/KrzysztofCukier/app/testImage.png)
+    ![Test Image 2](https://github.com/Iakirmon/KrzysztofCukier/blob/main/app/testImage.png)
